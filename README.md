@@ -17,7 +17,7 @@
 ```yaml
 Name: Kshitij Chandrakar
 Role: Aspiring Agentic AI Engineer
-Education: B.Tech CSE (3rd Semester)
+Education: B.Tech CSE (6th Semester)
 Focus: Agentic AI, LLMs, Computer Vision
 ```
 

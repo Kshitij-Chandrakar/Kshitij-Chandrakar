@@ -85,3 +85,10 @@ Focus: Agentic AI, LLMs, Computer Vision
 ⬜ Agentic AI Systems
 ⬜ Multi-Agent Collaboration
 ⬜ Production AI Deployment
+```
+
+## 🐍 Contribution Snake
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Kshitij-Chandrakar/Kshitij-Chandrakar/output/github-contribution-grid-snake.svg" />
+</p>

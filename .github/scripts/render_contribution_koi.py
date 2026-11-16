@@ -42,7 +42,7 @@ def render_svg(calendar: dict[str, Any], koi_gif: bytes) -> str:
             if int(day["contributionCount"]) > 0:
                 phase = (active_index * 12 / max(1, len(active)))
                 moving.append(
-                    f'<rect x="{x}" y="{y}" width="8" height="8" rx="2" fill="{color}">' 
+                    f'<rect x="{x}" y="{y}" width="8" height="8" rx="2" fill="{color}">'
                     f'<animate attributeName="x" values="{x};675;675;{x}" keyTimes="0;.08;.1;1" '
                     f'dur="12s" begin="-{phase:.2f}s" repeatCount="indefinite"/>'
                     f'<animate attributeName="y" values="{y};150;150;{y}" keyTimes="0;.08;.1;1" '

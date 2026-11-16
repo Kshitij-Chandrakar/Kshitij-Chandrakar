@@ -87,8 +87,8 @@ Focus: Agentic AI, LLMs, Computer Vision
 ⬜ Production AI Deployment
 ```
 
-## 🐍 Contribution Snake
+## 🐟 Contribution Koi
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Kshitij-Chandrakar/Kshitij-Chandrakar/output/github-contribution-grid-snake.svg" />
+  <img src="koi/koi.gif" width="256" alt="My contribution koi" />
 </p>

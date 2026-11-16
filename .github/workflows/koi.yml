@@ -5,7 +5,9 @@ on:
     - cron: "20 0 * * *"
   workflow_dispatch:
   push:
-    paths: [.github/workflows/koi.yml]
+    paths:
+      - .github/workflows/koi.yml
+      - .github/scripts/render_contribution_koi.py
 
 permissions:
   contents: write
@@ -21,10 +23,19 @@ jobs:
         with:
           body: white
           output-dir: koi
+      - name: Animate contributions feeding the koi
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          gh api graphql \
+            -f query='query($login:String!){user(login:$login){contributionsCollection{contributionCalendar{totalContributions weeks{contributionDays{date contributionCount contributionLevel weekday}}}}}}' \
+            -F login="$GITHUB_REPOSITORY_OWNER" > /tmp/contributions.json
+          python .github/scripts/render_contribution_koi.py /tmp/contributions.json koi/koi.gif koi/contribution-koi.svg
       - name: Commit the koi if it changed
         shell: bash
         run: |
-          git add koi/koi.gif
+          git add koi/koi.gif koi/contribution-koi.svg
           if git diff --cached --quiet; then
             echo "The koi is unchanged; nothing to commit."
             exit 0

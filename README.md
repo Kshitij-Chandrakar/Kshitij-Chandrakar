@@ -90,5 +90,5 @@ Focus: Agentic AI, LLMs, Computer Vision
 ## 🐟 Contribution Koi
 
 <p align="center">
-  <img src="koi/koi.gif" width="256" alt="My contribution koi" />
+  <img src="koi/contribution-koi.svg" alt="My contributions feeding and growing my koi" />
 </p>
